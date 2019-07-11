@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regular_ Expression</title>
+</head>
+<body>
+<script>
+    function isValidateEmail (str) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if(regexp.test(str)){
+            document.write("Email hop le"+"<br>");
+        }else {
+            document.write("Email khong hop le"+"<br>");
+        }
+
+    }
+    let string1= "hoa@gmail.com";
+    isValidateEmail(string1);
+</script>
+</body>
+</html>
